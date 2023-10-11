@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TodoList.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div id="app">
+        <h1>To-Do List</h1>
+        <input type="text" id="task" placeholder="Add a new task">
+        <button id="add">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Modal for editing tasks -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <input type="text" id="editedTask" placeholder="Edit the task">
+            <button id="submitEdit">Submit</button>
+            <button id="cancelEdit">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="TodoList.js"></script>
