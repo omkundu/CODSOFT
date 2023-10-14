@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<h3 lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Om Kundu</title>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+    <script>
+        function myFunction() {
+            alert("Your Message has been Send!");
+        }
+    </script>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1><span>O</span>M</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full Stack Web developer</p>
+                    <h1>Hello, I'm <span>Om</span> <br> Kundu </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- about-Section -->
+
+        <div id="about">
+            <div class="middle-container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="image" src="img.png.jpg" alt="Second image">
+                     </div>
+                     <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a Full Stack Developer, passionate about building<br> digital products that improve everyday experience for <br> people. I'm always looking for better opportunity,<br> ethical and accessible ways to solve the common <br> problems we are faced with day-to-day life<br>
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">
+                                Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education
+                            </p>
+                            
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Technologies</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Web frameworks </span><br>React,Redux</li>
+                                <li><span>Node Js </span><br>Backend</li>
+                                <li><span>Soft Skills</span><br>Team work, <br> Ready to learn new things, <br>Communication Skills</li>
+                                <li><span>Data Structure</span><br>300+ Hours of DSA</li>
+                                <li><span>Fronted Developer</span><br>1200+ Hours of coding </li>
+
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>10th STD</span><br>SS+2 High School, 2016</li>
+                                <li><span>12th Internmediate</span><br>Singbhum College, 2018</li>
+                                <li><span>B.A English Honours</span><br>Kolhan University, 2021</li>
+                            </ul>
+                        </div>
+                       
+                      </div>
+                       </div>
+            </div>
+        </div>
+
+       
+
+       
+        <!-- portfolio-Section -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="sugarcosmetic.png">
+                        <div class="layer">
+                            <h3>Messho</h3>
+                            <p>E-Commerce Website</p>
+                            <a href="https://courageous-piroshki-871c96.netlify.app/" target="_blank"> <i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="UrbanCompany.png" alt="dice-game image">
+                        <div class="layer">
+                            <h3>Urban Company</h3>
+                            <p>Home Service App</p>
+                            <a href="https://jocular-babka-8a3ec0.netlify.app/" target="_blank"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="GoDaday.png">
+                        <div class="layer">
+                            <h3>GoDaddy  Website</h3>
+                            <p>GoDaday Domain Website</p>
+                            <a href="https://rad-bonbon-6d8883.netlify.app/" target="_blank"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-------------------------- contact-Section ------------------------------>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1> <br>
+                        <p style="font-size: small;"><i class="fas fa-paper-plane"></i>omkundu156@gmail.com</p>
+                        <br>
+                        <p><i class="fas fa-phone-square-alt"></i>+917004398824</p> <br>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/me/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/om-kundu-b4b593162/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/omkundu"><i class="fa-brands fa-github"></i></a>
+
+                        </div>
+                        <!--RESUME LINK-->
+
+                        <a href="Resume.pdf" class="btn btn2" download="Resume.pdf">Download Resume <i class="fa-solid fa-download"></i></a>
+                    </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" onclick="myFunction()" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright &#169; Om. Made with <i class="fas fa-heart"></i> 2023 All rights reserved </p>
+            </div>
+        </div>
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+            
+        </script>
+         <script src="https://kit.fontawesome.com/462f495e04.js" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
